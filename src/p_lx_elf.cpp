@@ -2808,8 +2808,8 @@ void PackLinuxElf64::unpack(OutputFile *fo)
         throwEOFException();
 
     // finally test the checksums
-    if (ph.c_adler != c_adler || ph.u_adler != u_adler)
-        throwChecksumError();
+   // if (ph.c_adler != c_adler || ph.u_adler != u_adler)
+    //    throwChecksumError();
 #undef MAX_ELF_HDR
 }
 
@@ -3353,8 +3353,8 @@ void PackLinuxElf32::unpack(OutputFile *fo)
         throwEOFException();
 
     // finally test the checksums
-    if (ph.c_adler != c_adler || ph.u_adler != u_adler)
-        throwChecksumError();
+   // if (ph.c_adler != c_adler || ph.u_adler != u_adler)
+   //     throwChecksumError();
 #undef MAX_ELF_HDR
 }
 
